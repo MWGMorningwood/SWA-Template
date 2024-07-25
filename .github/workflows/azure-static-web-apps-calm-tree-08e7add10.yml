@@ -33,6 +33,18 @@ jobs:
           output_location: "." # Built app content directory - optional
           production_branch: "main"
           ###### End of Repository/Build Configurations ######
+      - name: Comment on PR with Preview URL
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const previewUrl = `https://${{ steps.builddeploy.outputs.static_web_app_url }}`;
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `The preview URL for this PR is: ${previewUrl}`
+            });
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
