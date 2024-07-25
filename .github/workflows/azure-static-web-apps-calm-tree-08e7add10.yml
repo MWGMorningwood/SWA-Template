@@ -37,6 +37,7 @@ jobs:
         if: github.event_name == 'pull_request'
         uses: actions/github-script@v6
         with:
+          github-token: ${{ secrets.TOKEN }}
           script: |
             const previewUrl = `https://${{ steps.builddeploy.outputs.static_web_app_url }}`;
             github.rest.issues.createComment({
