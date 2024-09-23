@@ -3,18 +3,10 @@
     "compounds": [
         {
             "name": "Launch Static Web App and Function",
-            "configurations": ["Launch Static Web App", "Launch Azure Function"]
+            "configurations": ["Launch Azure Function", "Launch Static Web App"]
         }
     ],
     "configurations": [
-        {
-            "type": "msedge",
-            "request": "launch",
-            "name": "Launch Static Web App",
-            "url": "http://localhost:4280",
-            "webRoot": "${workspaceFolder}",
-            "preLaunchTask": "swa: start"
-        },
         {
             "type": "node",
             "request": "launch",
@@ -22,6 +14,14 @@
             "program": "${workspaceFolder}/api/SendEmailFunction/src/functions/SendEmailFunction.js",
             "preLaunchTask": "func: host start",
             "outFiles": ["${workspaceFolder}/api/SendEmailFunction/src/functions/**/*.js"]
+        },
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Launch Static Web App",
+            "url": "http://localhost:4280",
+            "webRoot": "${workspaceFolder}",
+            "preLaunchTask": "swa: start"
         }
     ]
 }

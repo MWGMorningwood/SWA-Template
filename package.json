@@ -4,7 +4,7 @@
     "description": "Mortgage Template - Static Web App",
     "main": "index.html",
     "scripts": {
-      "start": "swa start src --api-location ./api/SendEmailFunction",
+      "start": "swa start src --api-location api",
       "build": "echo \"No build step defined\"",
       "test": "echo \"No tests yet...\""
     },
