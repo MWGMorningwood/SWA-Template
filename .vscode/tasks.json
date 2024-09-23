@@ -14,7 +14,7 @@
         {
             "label": "swa: start",
             "type": "shell",
-            "command": "swa start --api-location ./api/SendEmailFunction",
+            "command": "swa start src --api-location api",
             "isBackground": true,
             "problemMatcher": [],
             "options": {

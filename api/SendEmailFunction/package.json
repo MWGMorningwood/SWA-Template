@@ -1,7 +1,7 @@
 {
-  "name": "mortgage-solutions",
+  "name": "mortgage-template-api",
   "version": "1.0.0",
-  "description": "Mortgage Solutions - Get your home today",
+  "description": "Mortgage Template - Function API",
   "main": "src/functions/SendEmailFunction.js",
   "scripts": {
     "start": "func start",

@@ -18,7 +18,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
     `;
 
     try {
-        const response = await fetch('./api/SendEmailFunction', {
+        const response = await fetch('/api/SendEmailFunction', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
