@@ -1,0 +1,145 @@
+/* Ensure no horizontal overflow */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Style for the body */
+body {
+    font-family: Arial, sans-serif;
+    padding-bottom: 50px;
+}
+
+/* Style for the button */
+.button {
+    background-color: #681010;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Style for the header */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #681010;
+    font: 1.1em Arial, sans-serif;
+    color: white;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+/* Style for the image */
+.header + img {
+    max-width: 100%; /* Adjust this value to control the image size */
+    display: block;
+    margin: 0 auto; /* This centers the image horizontally */
+    padding-top: 10px;
+    opacity: 0.5;
+    object-fit: none;
+    height: 250px;
+    width: 100%;
+}
+
+/* Style for the content */
+.content {
+    padding: 20px;
+    text-align: center;
+    font: 1.1em Arial, sans-serif;
+}
+
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.content .button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content .button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the contact form */
+#contact-form {
+    margin-top: 20px;
+    text-align: left;
+    font: 1.1em Arial, sans-serif;
+}
+
+#contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #681010;
+    font-size: 1em;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}

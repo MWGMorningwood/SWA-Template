@@ -1,0 +1,17 @@
+{
+  "name": "mortgage-solutions",
+  "version": "1.0.0",
+  "description": "Mortgage Solutions - Get your home today",
+  "main": "src/functions/SendEmailFunction.js",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0",
+    "@azure/communication-email": "^1.0.0"
+  },
+  "devDependencies": {
+    "azure-functions-core-tools": "^4.x"
+  }
+}
