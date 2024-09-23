@@ -1,0 +1,29 @@
+{
+    "name": "mortgage-template-swa",
+    "version": "1.0.0",
+    "description": "Mortgage Template - Static Web App",
+    "main": "index.html",
+    "scripts": {
+      "start": "swa start src --api-location ./api/SendEmailFunction",
+      "build": "echo \"No build step defined\"",
+      "test": "echo \"No tests yet...\""
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "azure-functions-core-tools": "^4.x",
+      "swa-cli": "^1.0.0"
+    },
+    "engines": {
+      "node": ">=14.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MWGMorningwood/SWA-Template.git"
+    },
+    "bugs": {
+        "url": "https://github.com/MWGMorningwood/SWA-Template/issues"
+    },
+    "keywords": [],
+    "author": "Logan Cook",
+    "license": "MIT"
+  }
