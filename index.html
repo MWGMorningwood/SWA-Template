@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta property="og:title" content="Mortgage Solutions - Get your home today">
-	<meta property="og:description" content="We are dedicated to finding you the best mortgage solutions tailored to your needs. Whether you're buying your first home, refinancing, or investing, we've got you.">
-	<meta property="og:site_name" content="Mortgage Solutions">
-	<meta property='og:image' content='https://calm-tree-08e7add10.5.azurestaticapps.net/assets/favicon.png'>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mortgage Solutions</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    <meta property="og:title" content="Mortgage Solutions - Get your home today">
+    <meta property="og:description" content="We are dedicated to finding you the best mortgage solutions tailored to your needs. Whether you're buying your first home, refinancing, or investing, we've got you.">
+    <meta property="og:site_name" content="Mortgage Solutions">
+    <meta property='og:image' content='https://calm-tree-08e7add10.5.azurestaticapps.net/assets/favicon.png'>
+
+    <link rel="stylesheet" type="text/css" href="./lib/css/style.css">
+    <link rel="icon" type="image/x-icon" href="./lib/img/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Solutions</title>
 </head>
+
 <body>
-	<div class="header">
-		<h1>Welcome to Mortgage Solutions</h1>
-		<p>Find the best mortgage rates and offers</p>
-	</div>
-	<img src="./assets/meeting.jpg" style="width:100%;" alt="Mortgage Solutions Image">
-	<div class="content">
-		<h2>About Us</h2>
-		<p>We are dedicated to finding you the best mortgage solutions tailored to your needs. Whether you're buying your first home, refinancing, or looking for property investment opportunities, we're here to guide you through every step of the way.</p>
-		<button type="button" class="button">Learn More</button>
-	</div>
-	<div class="footer">
-		<p>Contact Us: info@mortgagesolutions.com | +123 456 7890</p>
-	</div>
+    <div class="header">
+        <h1>Welcome to Mortgage Solutions</h1>
+        <p>Find the best mortgage rates and offers</p>
+    </div>
+    <img src="./lib/img/homebanner.jpg" alt="Mortgage Solutions Image">
+    <div class="content">
+        <h2>About Us</h2>
+        <p>We are dedicated to finding you the best mortgage solutions tailored to your needs.</p>
+		<p>Whether you're buying your first home, refinancing, or looking for property investment opportunities, we're here to guide you through every step of the way.</p>
+        <button type="button" class="button" onclick="showContactForm()">Contact Us</button>
+        <div id="contact-form" style="display:none;">
+			<div class="contact-form-container">
+				<form id="contactForm">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required><br>
+					<label for="number">Phone Number:</label>
+					<input type="tel" id="number" name="number" required><br>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required><br>
+					<label for="message">Message:</label>
+					<textarea id="message" name="message" required></textarea><br>
+					<button type="submit">Send</button>
+				</form>
+			</div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Contact Us: info@mortgagesolutions.com | +123 456 7890</p>
+    </div>
+    <script src="./lib/js/script.js"></script>
 </body>
 </html>
