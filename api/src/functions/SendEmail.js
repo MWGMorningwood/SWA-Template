@@ -1,9 +1,9 @@
 const { app } = require('@azure/functions');
 const { EmailClient } = require('@azure/communication-email');
 
-app.http('SendEmailFunction', {
+app.http('SendEmail', {
     methods: ['POST'],
-    authLevel: 'anonymous',
+    authLevel: 'ANONYMOUS',
     handler: async (request, context) => {
         context.log(`Http function processed request for url "${request.url}"`);
 
