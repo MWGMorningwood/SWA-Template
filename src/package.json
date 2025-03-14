@@ -9,12 +9,9 @@
       "test": "echo \"No tests yet...\""
     },
     "dependencies": {},
-    "devDependencies": {
-      "azure-functions-core-tools": "^4.x",
-      "swa-cli": "^1.0.0"
-    },
+    "devDependencies": {},
     "engines": {
-      "node": ">=14.0.0"
+      "node": "18"
     },
     "repository": {
         "type": "git",

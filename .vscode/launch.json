@@ -1,20 +1,6 @@
 {
     "version": "0.2.0",
-    "compounds": [
-        {
-            "name": "Launch Static Web App and Function",
-            "configurations": ["Launch Azure Function", "Launch Static Web App"]
-        }
-    ],
     "configurations": [
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Launch Azure Function",
-            "program": "${workspaceFolder}/api/SendEmailFunction/src/functions/SendEmailFunction.js",
-            "preLaunchTask": "func: host start",
-            "outFiles": ["${workspaceFolder}/api/SendEmailFunction/src/functions/**/*.js"]
-        },
         {
             "type": "msedge",
             "request": "launch",
@@ -22,6 +8,14 @@
             "url": "http://localhost:4280",
             "webRoot": "${workspaceFolder}",
             "preLaunchTask": "swa: start"
+        },
+        {
+            "name": "Attach to Node Functions",
+            "type": "node",
+            "request": "attach",
+            "restart": true,
+            "port": 9229,
+            "preLaunchTask": "func: host start"
         }
     ]
 }
