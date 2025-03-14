@@ -45,14 +45,9 @@ Follow these steps to deploy this template to Azure Static Web Apps:
 ### Step 2: Set Up Environment Variables
 Ensure the following environment variables are set for proper debugging and deployment:
 
-#### Static Web App
-- `AzureWebJobsStorage`: Connection string for Azure Storage. Use `UseDevelopmentStorage=true` for local development.
-
-#### Azure Functions
-- `FUNCTIONS_WORKER_RUNTIME`: Set to `node` for JavaScript functions.
 - `AZURE_COMMUNICATION_SERVICE_CONNECTION_STRING`: Connection string for Azure Communication Service.
 - `AZURE_COMMUNICATION_SERVICE_SENDFROM_EMAIL`: Email address to send emails from.
-- `PRESET_RECIPIENT_EMAIL`: Default recipient email address.
+- `PRESET_RECIPIENT_EMAIL`: Default internal recipient email address.
 
 ### Step 3: Customize the Frontend
 Modify the files in the `src/` directory to suit your application's needs.
